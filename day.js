@@ -5,6 +5,7 @@
       position: 'developer',
       category: 'home',
       salary: 100,
+      company: 1,
     },
     {
       name: "anna",
@@ -12,6 +13,7 @@
       position: 'designer',
       category: 'in person',
       salary: 300,
+      company: 1,
     },
     {
       name: "susy",
@@ -19,6 +21,7 @@
       position: 'the boss',
       category: 'home',
       salary: 400,
+      company: 2,
     },
     {
       name: "anna",
@@ -26,6 +29,7 @@
       position: 'intern',
       category: 'home',
       salary: 10,
+      company: 2,
     },
   ]
   
@@ -66,9 +70,21 @@ const home = people.find((person) => {return person.category ==='home'})
 // 1st parameter ('acc') - total of all calculations
 // 2nd parameter ('curr') - current iteration/value
 
-const dailyTotal = people.reduce((acc, curr) =>{
-    total = acc += curr.salary
-    return total
+// const dailyTotal = people.reduce((acc, curr) =>{
+//     total = acc += curr.salary
+//     return total
     
-},0)
-console.log(dailyTotal)
+// },0)
+// console.log(dailyTotal)
+
+let total = people.reduce((acc, curr) => {
+    const {salary, company} = curr
+    acc.totalSalary += salary
+    acc.companySize += company
+    return acc
+}, {
+    totalSalary: 0,
+    companySize: 0,
+})
+
+// console.log(total)

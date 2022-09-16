@@ -49,6 +49,8 @@
   // console.log(location())
   
   const colors = ['red', 'red', 'blue', 'orange']
+  const friends = ['john', 'peter','bob', 'anna','kelly']
+  
   
   const color = [... new Set(colors.map((color) => color))]
   

@@ -28,6 +28,35 @@ function fact (n) {
     return total
 }
 
-console.log(fact(0))
-console.log(fact(1))
-console.log(fact(5))
+// console.log(fact(0))
+// console.log(fact(1))
+// console.log(fact(5))
+
+function prime(n) {
+    if (n < 2) {
+        return false
+    } for(let i=2; i<n; i++) {
+        if(n % i === 0) {
+            return false
+        }
+    }
+    return true
+} 
+
+// console.log(prime(2))
+// console.log(prime(23))
+// console.log(prime(4))
+
+function powerOfTwo(n) {
+    if (n<2) {
+        return false
+    }
+    while( n%2 !==0) {
+        return false
+    } n  = n/2
+
+    return true
+}
+
+// console.log(powerOfTwo(44))
+

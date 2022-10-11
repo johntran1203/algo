@@ -13,7 +13,7 @@ function fib(n) {
 }
 
 // console.log(fib(2))
-// console.log(fib(3))
+// console.log(fib(3))q
 // console.log(fib(7))
 
 function fact (n) {
@@ -60,3 +60,12 @@ function powerOfTwo(n) {
 
 // console.log(powerOfTwo(44))
 
+function fibonacci(n){
+    const fib = [0,1]
+    for(let i=2; i<n; i++) {
+        fib[i] = fib[i-1] +fib[i-2]
+    }
+    return fib
+}
+
+console.log(fibonacci(7))

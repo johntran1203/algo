@@ -6,4 +6,4 @@ const addUpTo = (n) => {
     return total
   }
   
-//   console.log(addUpTo(6))
+  console.log(typeof(addUpTo(6)))

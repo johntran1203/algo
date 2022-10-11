@@ -40,7 +40,7 @@ function validAnagram(first, second){
       }
      return total >1 ? true : false 
     }
-    console.log(containsDuplicate([2,14,18,22,22]))
+    console.log(typeof(containsDuplicate([2,14,18,22,22])))
     console.log(containsDuplicate([1,2,3,4]))
     console.log(containsDuplicate([1,1,1,3,3,4,3,2,4,2]))
     
